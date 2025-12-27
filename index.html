@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SignalVoid</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Status Bar -->
+  <div id="statusBar" class="baseline">
+    Initializing SignalVoid…
+  </div>
+
+  <!-- Info Panel -->
+  <div id="infoPanel">
+    <p id="explanation">Analyzing activity…</p>
+    <p id="metaInfo">Last updated: — | Confidence: —</p>
+  </div>
+
+  <!-- Nearby Areas -->
+  <div id="nearbyPanel">
+    <h3>Nearby Areas</h3>
+    <ul id="nearbyList">
+      <li>Loading nearby data…</li>
+    </ul>
+  </div>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+ <!-- Google Maps API key is restricted to Firebase Hosting domains -->
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJZhrhZDR-K_i7556KSsWGt0AzfaceznQ">
+</script>
+
+<!-- App Logic -->
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
